@@ -1,0 +1,4 @@
+LoginPage.loginInput=id=#username
+LoginPage.passwordInput=id=#password
+LoginPage.loginButton=xpath=.radius
+LoginPage.infoMessage=id=#flash
