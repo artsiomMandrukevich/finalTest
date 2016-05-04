@@ -2,3 +2,7 @@ LoginPage.loginInput=id=#username
 LoginPage.passwordInput=id=#password
 LoginPage.loginButton=xpath=.radius
 LoginPage.infoMessage=id=#flash
+LoginPage.loginPageTitle=css=.example>h2
+
+AlertPage.JSProm=text=Click for JS Prompt
+AlertPage.Result=id=#result

@@ -7,12 +7,12 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import static com.codeborne.selenide.Selenide.close;
 import static com.codeborne.selenide.Selenide.open;
 
-/**
- * Created by User on 03.05.2016.
- */
+//        Задание 1. Написать тесты, покрывающие функциональность логина https://the-internet.herokuapp.com/login (минимум 4 теста)
+//        Обязательное использование Selenide, все тесты внутри одного класса, использование Page Object, DDT, Before/After методы
+
+
 public class LoginTest {
 
     @DataProvider
@@ -20,30 +20,26 @@ public class LoginTest {
         return new Object[][] {
                 new Object[] {"","","Your username is invalid!\n" + "×"},
                 new Object[] {"","SuperSecretPassword!","Your username is invalid!\n" + "×"},
-                new Object[] {"tomsmith","","Your password is invalid!\n" + "×"},
                 new Object[] {"WrongUserName","SuperSecretPassword!","Your username is invalid!\n" + "×"},
-                new Object[] {"tomsmith","WrongUserName","Your password is invalid!\n" + "×"},
                 new Object[] {"WrongUserName","WrongUserName!","Your username is invalid!\n" + "×"},
         };
     }
 
-//    @BeforeTest
-//    public void setup(){
-//        open("http://the-internet.herokuapp.com/login");
-//    }
+    @BeforeTest
+    public void setup(){
+        open("http://the-internet.herokuapp.com/login");
+    }
 
     @Test(dataProvider = "testData")
     public void loginTest(String username, String password, String infoMessage) {
-        open("http://the-internet.herokuapp.com/login");
         Login loginPage = new Login();
-
         loginPage.setLogin(username).setPassword(password).clickLogin();
         Assert.assertEquals(loginPage.infoMessage(), infoMessage);
-        close();
+
     }
 
-//    @AfterTest
-//    public void closeWindow(){
-//        close();
-//    }
+    @AfterTest
+    public void closeWindow(){
+        open("http://the-internet.herokuapp.com/login");
+    }
 }

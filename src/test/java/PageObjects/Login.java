@@ -1,6 +1,7 @@
 package PageObjects;
 
 import static Helpers.Locator.get;
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 
 /**
