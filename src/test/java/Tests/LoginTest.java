@@ -22,24 +22,28 @@ public class LoginTest {
                 new Object[] {"","SuperSecretPassword!","Your username is invalid!\n" + "×"},
                 new Object[] {"WrongUserName","SuperSecretPassword!","Your username is invalid!\n" + "×"},
                 new Object[] {"WrongUserName","WrongUserName!","Your username is invalid!\n" + "×"},
+                new Object[] {"tomsmith","","Your username is invalid!\n" + "×"},
+                new Object[] {"tomsmith","WrongUserName!","Your username is invalid!\n" + "×"},
+
         };
     }
 
     @BeforeTest
-    public void setup(){
+    public void BeforeTest(){
         open("http://the-internet.herokuapp.com/login");
     }
 
     @Test(dataProvider = "testData")
-    public void loginTest(String username, String password, String infoMessage) {
+    public void loginTest(String username, String password, String AssertinfoMessage) {
         Login loginPage = new Login();
         loginPage.setLogin(username).setPassword(password).clickLogin();
-        Assert.assertEquals(loginPage.infoMessage(), infoMessage);
+
+        Assert.assertEquals(loginPage.AssertInfoMessage(), AssertinfoMessage);
 
     }
 
     @AfterTest
-    public void closeWindow(){
-        open("http://the-internet.herokuapp.com/login");
+    public void afterTest() {
+        open("http://the-internet.herokuapp.com/");
     }
 }

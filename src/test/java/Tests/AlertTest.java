@@ -2,6 +2,8 @@ package Tests;
 
 import PageObjects.Alerts;
 import org.openqa.selenium.Alert;
+import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -26,20 +28,21 @@ public class AlertTest {
     }
 
 
-    @Test(dataProvider = "testData")
-    public void alertTest(String alertMessage) throws InterruptedException {
-
+    @BeforeTest
+    public void BeforeTest(){
         open("https://the-internet.herokuapp.com/javascript_alerts");
+    }
+
+    @Test(dataProvider = "testData")
+    public void alertTest(String alertMessage) {
+        String AssertalertMessage = "You entered: " + alertMessage;
 
         Alerts alertpage = new Alerts();
         alertpage.clickLogin();
-
         Alert alert = switchTo().alert();
         alert.sendKeys(alertMessage);
         alert.accept();
 
-        alertpage.resultMessage(alertMessage);
-
-        close();
+        Assert.assertEquals(alertpage.AssertresultMessage(), AssertalertMessage);
     }
 }

@@ -6,3 +6,9 @@ LoginPage.loginPageTitle=css=.example>h2
 
 AlertPage.JSProm=text=Click for JS Prompt
 AlertPage.Result=id=#result
+
+DropdownPage.dropdownlist=text=Dropdown List
+DropdownPage.dropdown=id=#dropdown
+
+HoverPage.avatar=css=.figure>img
+HoverPage.hoversTitle=text=Hovers
