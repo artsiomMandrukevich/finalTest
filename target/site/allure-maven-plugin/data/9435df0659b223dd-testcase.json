@@ -1,0 +1,47 @@
+{
+  "uid" : "9435df0659b223dd",
+  "name" : "alertTest[qwertyqwe]",
+  "title" : "Alert test [qwertyqwe]",
+  "time" : {
+    "start" : 1462563113460,
+    "stop" : 1462563113653,
+    "duration" : 193
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "634ec35be71e58c8",
+    "name" : "Surefire suite : Surefire test",
+    "title" : "Surefire suite : Surefire test"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "hav"
+  }, {
+    "name" : "thread",
+    "value" : "11336@hav.main(1)"
+  }, {
+    "name" : "suite-name",
+    "value" : "Surefire suite : Surefire test"
+  }, {
+    "name" : "suite-title",
+    "value" : "Surefire suite : Surefire test"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  } ],
+  "parameters" : [ ]
+}

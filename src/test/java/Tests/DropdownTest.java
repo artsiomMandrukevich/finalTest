@@ -3,6 +3,7 @@ package Tests;
 import PageObjects.Dropdown;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -17,7 +18,7 @@ import static com.codeborne.selenide.Selenide.open;
 public class DropdownTest {
 
 
-    @BeforeTest
+    @BeforeClass
     public void BeforeTest(){
         open("http://the-internet.herokuapp.com/dropdown");
     }

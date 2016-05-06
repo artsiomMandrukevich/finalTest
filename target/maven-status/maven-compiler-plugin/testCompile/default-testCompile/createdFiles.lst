@@ -1,0 +1,8 @@
+Tests\AlertTest.class
+PageObjects\Login.class
+Tests\LoginTest.class
+PageObjects\Alerts.class
+PageObjects\Hover.class
+Tests\DropdownTest.class
+Tests\HoverTest.class
+PageObjects\Dropdown.class

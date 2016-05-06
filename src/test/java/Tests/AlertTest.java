@@ -3,6 +3,7 @@ package Tests;
 import PageObjects.Alerts;
 import org.openqa.selenium.Alert;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -28,7 +29,7 @@ public class AlertTest {
     }
 
 
-    @BeforeTest
+    @BeforeClass
     public void BeforeTest(){
         open("https://the-internet.herokuapp.com/javascript_alerts");
     }

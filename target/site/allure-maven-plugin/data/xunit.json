@@ -1,0 +1,170 @@
+{
+  "time" : {
+    "start" : 1462563109494,
+    "stop" : 1462563122793,
+    "duration" : 13299
+  },
+  "testSuites" : [ {
+    "uid" : "634ec35be71e58c8",
+    "name" : "Surefire suite : Surefire test",
+    "title" : "Surefire suite : Surefire test",
+    "time" : {
+      "start" : 1462563109494,
+      "stop" : 1462563122793,
+      "duration" : 13299
+    },
+    "statistic" : {
+      "total" : 13,
+      "passed" : 13,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "description" : null,
+    "testCases" : [ {
+      "uid" : "e0e413a155c39aa1",
+      "name" : "alertTest[123456789]",
+      "title" : "Alert test [123456789]",
+      "time" : {
+        "start" : 1462563109494,
+        "stop" : 1462563113382,
+        "duration" : 3888
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "9435df0659b223dd",
+      "name" : "alertTest[qwertyqwe]",
+      "title" : "Alert test [qwertyqwe]",
+      "time" : {
+        "start" : 1462563113460,
+        "stop" : 1462563113653,
+        "duration" : 193
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "8ccb297eaad9b6ae",
+      "name" : "alertTest[asdfghasd]",
+      "title" : "Alert test [asdfghasd]",
+      "time" : {
+        "start" : 1462563113656,
+        "stop" : 1462563113837,
+        "duration" : 181
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "5436f88615747fae",
+      "name" : "alertTest[zxcvbnzxc]",
+      "title" : "Alert test [zxcvbnzxc]",
+      "time" : {
+        "start" : 1462563113843,
+        "stop" : 1462563114015,
+        "duration" : 172
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "5a4b5cf990910be8",
+      "name" : "alertTest[qwe123asd]",
+      "title" : "Alert test [qwe123asd]",
+      "time" : {
+        "start" : 1462563114018,
+        "stop" : 1462563114226,
+        "duration" : 208
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "ecd9f64341fbfa4",
+      "name" : "dropdowntTest",
+      "title" : "Dropdownt test",
+      "time" : {
+        "start" : 1462563114273,
+        "stop" : 1462563117573,
+        "duration" : 3300
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "a67ddc187d320713",
+      "name" : "hoverTest",
+      "title" : "Hover test",
+      "time" : {
+        "start" : 1462563117612,
+        "stop" : 1462563118208,
+        "duration" : 596
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "743ed3f2b00aa86b",
+      "name" : "loginTest[,,Your username is invalid!]",
+      "title" : "Login test [,,Your username is invalid!]",
+      "time" : {
+        "start" : 1462563118255,
+        "stop" : 1462563119909,
+        "duration" : 1654
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "36a0c316a7267905",
+      "name" : "loginTest[,SuperSecretPassword!,Your username is invalid!]",
+      "title" : "Login test [,SuperSecretPassword!,Your username is invalid!]",
+      "time" : {
+        "start" : 1462563119912,
+        "stop" : 1462563120363,
+        "duration" : 451
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "7707bdc1eb339876",
+      "name" : "loginTest[WrongUserName,SuperSecretPassword!,Your username is invalid!]",
+      "title" : "Login test [WrongUserName,SuperSecretPassword!,Your username is invalid!]",
+      "time" : {
+        "start" : 1462563120365,
+        "stop" : 1462563121238,
+        "duration" : 873
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "997ac14cbc311e20",
+      "name" : "loginTest[WrongUserName,WrongUserName!,Your username is invalid!]",
+      "title" : "Login test [WrongUserName,WrongUserName!,Your username is invalid!]",
+      "time" : {
+        "start" : 1462563121240,
+        "stop" : 1462563121712,
+        "duration" : 472
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "70aeb5f51c23f728",
+      "name" : "loginTest[tomsmith,,Your username is invalid!]",
+      "title" : "Login test [tomsmith,,Your username is invalid!]",
+      "time" : {
+        "start" : 1462563121714,
+        "stop" : 1462563122191,
+        "duration" : 477
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "377ffa23887ca164",
+      "name" : "loginTest[tomsmith,WrongUserName!,Your username is invalid!]",
+      "title" : "Login test [tomsmith,WrongUserName!,Your username is invalid!]",
+      "time" : {
+        "start" : 1462563122193,
+        "stop" : 1462563122793,
+        "duration" : 600
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    } ]
+  } ]
+}

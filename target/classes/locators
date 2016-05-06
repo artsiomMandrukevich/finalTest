@@ -12,3 +12,5 @@ DropdownPage.dropdown=id=#dropdown
 
 HoverPage.avatar=css=.figure>img
 HoverPage.hoversTitle=text=Hovers
+HoverPage.user1=text=name: user2
+HoverPage.user1text=xpath=//div[@class="figure"][2]

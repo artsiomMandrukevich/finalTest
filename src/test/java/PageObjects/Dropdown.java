@@ -13,7 +13,7 @@ import static com.codeborne.selenide.Selenide.$;
 public class Dropdown {
 
     public WebElement getSelect(){
-        $(byText(get("DropdownPage.dropdownlist"))).waitUntil(Condition.enabled,4000);
+        $(byText(get("DropdownPage.dropdownlist"))).waitUntil(Condition.enabled,20000);
         return $(get("DropdownPage.dropdown")).toWebElement();
     }
 }

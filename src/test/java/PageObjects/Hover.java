@@ -1,6 +1,7 @@
 package PageObjects;
 
 import com.codeborne.selenide.Condition;
+import org.openqa.selenium.By;
 
 import static Helpers.Locator.get;
 import static com.codeborne.selenide.Selectors.byText;
@@ -14,8 +15,13 @@ public class Hover {
     public Hover getActions(){
         $(byText(get("HoverPage.hoversTitle"))).waitUntil(Condition.enabled,4000);
         $(get("HoverPage.avatar")).hover();
-        $(byText(get("HoverPage.hoversTitle"))).waitUntil(Condition.enabled,4000);
         return this;
     }
 
+    public boolean AssertElemenet(){
+        $(By.xpath(get("HoverPage.user1text"))).waitUntil(Condition.enabled,4000);
+        return $(By.xpath(get("HoverPage.user1text"))).find("div a").exists();
+    }
 }
+
+

@@ -4,6 +4,8 @@ package Tests;
 
 import PageObjects.Hover;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -13,7 +15,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class HoverTest {
 
-    @BeforeTest
+    @BeforeClass
     public void BeforeTest(){
         open("http://the-internet.herokuapp.com/hovers");
     }
@@ -23,6 +25,6 @@ public class HoverTest {
         Hover hover = new Hover();
         hover.getActions();
 
-        //Дописать проверку и подключить репортинг
+        Assert.assertTrue(hover.AssertElemenet());
     }
 }
