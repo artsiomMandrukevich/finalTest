@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1463308258581" stop="1463308286405" version="1.4.16" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>TestTest : testngTest</name>
+    <title>TestTest : testngTest</title>
+    <test-cases>
+        <test-case start="1463308278609" stop="1463308282335" status="passed">
+            <name>alertTest[123456789]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="hav"/>
+                <label name="thread" value="7152@hav.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1463308282422" stop="1463308282620" status="passed">
+            <name>alertTest[qwertyqwe]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="hav"/>
+                <label name="thread" value="7152@hav.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1463308282624" stop="1463308282780" status="passed">
+            <name>alertTest[asdfghasd]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="hav"/>
+                <label name="thread" value="7152@hav.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1463308282784" stop="1463308282939" status="passed">
+            <name>alertTest[zxcvbnzxc]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="hav"/>
+                <label name="thread" value="7152@hav.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1463308282943" stop="1463308283094" status="passed">
+            <name>alertTest[qwe123asd]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="hav"/>
+                <label name="thread" value="7152@hav.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1463308283131" stop="1463308286368" status="passed">
+            <name>dropdowntTest</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="hav"/>
+                <label name="thread" value="7152@hav.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

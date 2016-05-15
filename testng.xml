@@ -1,0 +1,8 @@
+<suite name="TestTest" verbose="1" >
+    <test name="testngTest"   >
+        <classes>
+            <class name="Tests.AlertTest" />
+            <class name="Tests.DropdownTest" />
+        </classes>
+    </test>
+</suite>
